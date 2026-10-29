@@ -23,7 +23,9 @@
 #include <linux/sched/task.h>
 #include <linux/sched/task_stack.h>
 #include <linux/sched/cputime.h>
-#include <linux/sched/ext.h>
+#ifdef CONFIG_HMBIRD_SCHED
+#include <linux/sched/hmbird.h>
+#endif
 #include <linux/seq_file.h>
 #include <linux/rtmutex.h>
 #include <linux/init.h>
